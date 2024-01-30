@@ -29,7 +29,7 @@ export default function Experience() {
     })}
     //console.log(experiences)
     const fetchUserSkills= async () => {
-      await fetch("http://localhost:4000/api/getUserSkills", {
+      await fetch("mnnitian-backend.vercel.app/getUserSkills", {
           // credentials: 'include',
           // Origin:"http://localhost:3000/login",
           method: 'POST',
