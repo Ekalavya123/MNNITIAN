@@ -11,7 +11,7 @@ export default function RequestCard(props) {
   }
  
   const handleEndAccept= async ()=>{
-    await fetch("http://localhost:4000/api/updateEndRequest", {
+    await fetch("mnnitian-backend.vercel.app/updateEndRequest", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
