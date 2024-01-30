@@ -9,7 +9,7 @@ export default function Login() {
   const handlesubmit= (event)=>{
     event.preventDefault();
     console.log(credentials.email,credentials.password)
-    fetch("http://localhost:4000/api/loginuser", {
+    fetch("mnnitian-backend.vercel.app/loginuser", {
         method: 'POST',
         headers:{
             'Content-Type':'application/json'
