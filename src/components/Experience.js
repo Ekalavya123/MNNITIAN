@@ -13,7 +13,7 @@ export default function Experience() {
     if(localStorage.getItem("isProfile")==="true"){email=localStorage.getItem("profileEmail")}
 
     const fetchExperience = async () => {
-    await fetch("http://localhost:4000/api/userExperiences", {
+    await fetch("mnnitian-backend.vercel.app/userExperiences", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
