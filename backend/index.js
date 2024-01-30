@@ -6,7 +6,13 @@ const mongoDB = require("./db");
 mongoDB();
 
 var cors = require('cors')
-app.use(cors())
+app.use(cors(
+    {
+        origin:[""],
+        methods:["POST","GET"],
+        credentials:true
+    }
+))
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
