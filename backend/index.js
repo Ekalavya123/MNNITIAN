@@ -7,7 +7,6 @@ const mongoDB = require("./db");
 
 var cors = require('cors')
 app.use(express.json())
-app.use(cors())
 app.use(cors(
     {
         origin:["https://mnnitian.vercel.app"],
