@@ -6,7 +6,7 @@ export default function Experiences() {
   const [search,setSearch]=useState("");
   let [experience,setExperience]=useState([])
     const fetchUser = async () => {
-        await fetch("mnnitian-backend.vercel.app/api/getExperiences", {
+        await fetch("mnnitian-backend.vercel.app/getExperiences", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',
