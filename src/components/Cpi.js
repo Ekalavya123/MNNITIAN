@@ -16,7 +16,7 @@ export default function Cpi() {
   const [cpi,setCpi]=useState(null);
   const [spi,setSpi]=useState(null);
   const fetchUserGrades= async () => {
-    await fetch("http://localhost:4000/api/getGrades", {
+    await fetch("mnnitian-backend.vercel.app/getGrades", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
