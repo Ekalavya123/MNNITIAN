@@ -9,7 +9,7 @@ export default function Card(props) {
     let email=localStorage.getItem("userEmail")
     if(localStorage.getItem("isProfile")==="true"){email=localStorage.getItem("profileEmail")}
     console.log(localStorage.getItem('userEmail'),props.email)
-    await fetch("http://localhost:4000/api/Requests", {
+    await fetch("mnnitian-backend.vercel.app/Requests", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
