@@ -6,6 +6,8 @@ const mongoDB = require("./db");
 
 
 var cors = require('cors')
+app.use(express.json())
+app.use(cors())
 app.use(cors(
     {
         origin:["http://localhost:3000"],
@@ -13,7 +15,7 @@ app.use(cors(
         credentials:true
     }
 ))
-app.use(express.json())
+
 mongoDB();
 
 app.get('/', (req, res) => {
