@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 export default function Sent() {
   const [sentRequests,setSentRequests] =useState({requestData:[]});
   const fetchSentRequests = async ()=>{
-    await fetch("http://localhost:4000/api/sentRequests", {
+    await fetch("mnnitian-backend.vercel.app/sentRequests", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
