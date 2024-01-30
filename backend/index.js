@@ -8,7 +8,7 @@ mongoDB();
 var cors = require('cors')
 app.use(cors(
     {
-        origin:[""],
+        origin:["https://mnnitian.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
   })
   
-app.use('/api',require("./Routes/Fetching"));
+app.use('',require("./Routes/Fetching"));
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
