@@ -8,7 +8,7 @@ export default  function About() {
     let email=localStorage.getItem("userEmail")
     if(localStorage.getItem("isProfile")==="true"){email=localStorage.getItem("profileEmail")}
     const fetchUser = async () => {
-        await fetch("http://localhost:4000/api/getUserDetails", {
+        await fetch("mnnitian-backend.vercel.app/getUserDetails", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',
