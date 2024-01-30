@@ -9,7 +9,7 @@ export default function FindStudent() {
     let [Skills_data,setSkills]=useState([]);
     const [search,setSearch]=useState("");
     const fetchUser = async () => {
-        await fetch("http://localhost:4000/api/getUsersSkills", {
+        await fetch("mnnitian-backend.vercel.app/getUsersSkills", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',
@@ -23,7 +23,7 @@ export default function FindStudent() {
         
         
     const fetchSkills=async ()=>{
-      await fetch("http://localhost:4000/api/getSkills", {
+      await fetch("mnnitian-backend.vercel.app/getSkills", {
               // credentials: 'include',
               // Origin:"http://localhost:3000/login",
               method: 'POST',
