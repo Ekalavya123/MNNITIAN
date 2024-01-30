@@ -8,15 +8,7 @@ const Sent=require("../models/Sent")
 const Recieved=require("../models/Recieved")
 const Grade=require("../models/Grade")
 
-const cors = require('cors')
-const app = express()
-app.use(cors(
-    {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+
 
 router.post("/creatuser",[
     body('email').isEmail(),
