@@ -7,7 +7,7 @@ export default function Signup() {
   let navigate=useNavigate();
   const handlesubmit=(event)=>{
     event.preventDefault();
-    fetch("http://localhost:4000/api/creatuser", {
+    fetch("mnnitian-backend.vercel.app/creatuser", {
         method: 'POST',
         headers:{
             'Content-Type':'application/json'
