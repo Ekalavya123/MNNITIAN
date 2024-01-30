@@ -8,7 +8,7 @@ mongoDB();
 var cors = require('cors')
 app.use(cors(
     {
-        origin:["https://mnnitian.vercel.app"],
+        origin:["http://localhost:3000"],
         methods:["POST","GET"],
         credentials:true
     }
